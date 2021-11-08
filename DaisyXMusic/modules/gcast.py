@@ -25,7 +25,7 @@ from DaisyXMusic.services.callsmusic.callsmusic import client as USER
 
 
 @Client.on_message(filters.command(["broadcast"]))
-async def broadcast(_, message: Message):
+async def gcast(_, message: Message):
     sent = 0
     failed = 0
     if message.from_user.id not in SUDO_USERS:
